@@ -18,6 +18,7 @@ const JobSchema = new mongoose.Schema(
       default: 'pending',
     },
     createdBy: {
+      // type: specifies that the type of this field is an ObjectId, which is a special data type in Mongoose used to reference other documents in the database
       type: mongoose.Types.ObjectId,
       ref: 'User',
       required: [true, 'Please provide user'],

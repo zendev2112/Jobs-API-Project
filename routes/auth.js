@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express'); // this creates an instance of the express framework.
 
 const router = express.Router();
 
